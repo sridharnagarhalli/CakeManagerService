@@ -1,0 +1,23 @@
+server:
+  port: 8088
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  hibernate:
+    ddl-auto: update
+
+cakemgr:
+  security:
+    username: user1
+    password: P@ssw0rd
+
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
