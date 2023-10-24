@@ -17,7 +17,7 @@ resource "aws_ecs_task_definition" "cakemanagerservice_task" {
   container_definitions = jsonencode([
     {
       name  = "cakemanagerservice-container"
-      image = "your-docker-image:latest"  # Replace with your Docker image URL
+      image = "cakemanagerservice-cake-manager-service:latest" 
       portMappings = [
         {
           containerPort = 8088
