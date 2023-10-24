@@ -36,3 +36,6 @@ Integration tests uses test containers with in-memory H2 database which creates 
 
 **mvn test**
 
+# Deployment to AWS
+Created a terraform script **main.tf** for deploying the service to AWS fargate cluster. Since left the placeholders for ARN, VPC and Subnets as they are private to an account and some info would change when a new aws fargate cluster is provisioned.
+
